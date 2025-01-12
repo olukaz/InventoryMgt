@@ -1,5 +1,5 @@
 from pathlib import Path
-import warnings
+import warnings, os
 warnings.filterwarnings("ignore", category=DeprecationWarning, module="coreapi")
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -43,7 +43,7 @@ ROOT_URLCONF = 'InventoryMgt.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
