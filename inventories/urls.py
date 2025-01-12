@@ -23,6 +23,7 @@ router.register(r'products', ProductViewSet)
 router.register(r'inventory', InventoryLevelViewSet)
 
 
+
 urlpatterns = [
     path('', include(router.urls)),
 ]
