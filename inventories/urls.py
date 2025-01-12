@@ -20,7 +20,7 @@ router = DefaultRouter()
 router.register(r'suppliers', SupplierViewSet)
 router.register(r'products', ProductViewSet)
 router.register(r'inventory', InventoryLevelViewSet)
-router.register(r'multiproducts', MultiProductViewSet)
+router.register(r'filehandling', FilehandlingViewSet)
 
 
 urlpatterns = [
