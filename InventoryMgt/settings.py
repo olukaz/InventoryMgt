@@ -62,12 +62,24 @@ WSGI_APPLICATION = 'InventoryMgt.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'inventorymgt_db',
+        'USER': 'inventorymgt_db_user',
+        'PASSWORD': 'sM3xv0FdOKRZanTC6cv88cSdFPDIzAIG',
+        'HOST': 'dpg-cu1og79u0jms738kn8f0-a',
+        'PORT': 5432,
     }
 }
+
 
 
 # Password validation
