@@ -28,7 +28,7 @@ class ProductViewSet(viewsets.ModelViewSet):
 
 
 
-class ProductViewSet(viewsets.ModelViewSet):
+class ProductMultiViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
     parser_classes = [MultiPartParser]  # Allow file upload
