@@ -17,7 +17,8 @@ from .views import *
 
 
 router = DefaultRouter()
-router.register(r'products', MiscallenousViewSet, basename='filehandling')
+router.register(r'bulkproducts', MiscallenousViewSet, basename='filehandling')
+router.register(r'bulkproducts', MiscallenousViewSet, basename='dataprocessing')
 router.register(r'suppliers', SupplierViewSet)
 router.register(r'products', ProductViewSet)
 router.register(r'inventory', InventoryLevelViewSet)
